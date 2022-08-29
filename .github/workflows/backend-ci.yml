@@ -48,6 +48,7 @@ jobs:
           python -m pytest -v
 
       - name: Coverage with Coveralls
+        if: ${{ failure() || steps.changes.outputs.app == 'true' }}
         uses: AndreMiras/coveralls-python-action@develop
         with:
           base-path: ${{ env.APP_DIR }}
