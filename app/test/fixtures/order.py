@@ -1,7 +1,7 @@
 import pytest
 
 from ..utils.functions import (shuffle_list, get_random_sequence,
-                               get_random_string)
+                               get_random_string, get_random_phone, get_random_choice)
 
 
 def client_data_mock() -> dict:
@@ -9,7 +9,7 @@ def client_data_mock() -> dict:
         'client_address': get_random_string(),
         'client_dni': get_random_sequence(),
         'client_name': get_random_string(),
-        'client_phone': get_random_sequence()
+        'client_phone': get_random_phone()
     }
 
 
@@ -26,20 +26,20 @@ def client_data():
 @pytest.fixture
 def order(create_ingredients, create_size, client_data) -> dict:
     ingredients = [ingredient.get('_id') for ingredient in create_ingredients]
-    size_id = create_size.get('_id')
+    size_id = create_size.json['_id']
     return {
-        **client_data_mock(),
+        **client_data,
         'ingredients': ingredients,
         'size_id': size_id
     }
 
 
 @pytest.fixture
-def create_order(client, order_uri, create_ingredients, create_sizes) -> list:
+def create_order(client, order_uri, create_ingredients, create_size, client_data) -> list:
     ingredients = [ingredient.get('_id') for ingredient in create_ingredients]
-    size_id = shuffle_list(create_sizes)[0].get('_id')
+    size_id = create_size.json['_id']
     response = client.post(order_uri, json={
-        **client_data_mock(),
+        **client_data,
         'ingredients': shuffle_list(ingredients)[:5],
         'size_id': size_id
     })
@@ -47,15 +47,15 @@ def create_order(client, order_uri, create_ingredients, create_sizes) -> list:
 
 
 @pytest.fixture
-def create_orders(client, order_uri, create_ingredients, create_sizes) -> list:
+def create_orders(client, order_uri, create_ingredients, create_sizes, client_data) -> list:
     ingredients = [ingredient.get('_id') for ingredient in create_ingredients]
     sizes = [size.get('_id') for size in create_sizes]
     orders = []
     for _ in range(10):
         new_order = client.post(order_uri, json={
-            **client_data_mock(),
+            **client_data,
             'ingredients': shuffle_list(ingredients)[:5],
-            'size_id': shuffle_list(sizes)[0]
+            'size_id': get_random_choice(sizes)
         })
         orders.append(new_order.json)
     return orders
