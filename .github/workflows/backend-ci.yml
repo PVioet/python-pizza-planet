@@ -42,13 +42,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Test with pytest
+      - name: Test and Coverage with pytest
         if: steps.changes.outputs.app == 'true'
         run: |
-          python -m pytest -v
+          pytest --cov-report xml --cov=$TESTS_DIR
 
-      - name: Coverage with Coveralls
-        if: ${{ failure() || steps.changes.outputs.app == 'true' }}
-        uses: AndreMiras/coveralls-python-action@develop
+      - name: Coverage Comment
+        if: steps.changes.outputs.app == 'true'
+        uses: ewjoachim/python-coverage-comment-action@v3
         with:
-          base-path: ${{ env.APP_DIR }}
+          GITHUB_TOKEN: ${{ github.token }}
