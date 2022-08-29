@@ -1,7 +1,7 @@
 name: Backend CI Pipeline
 
 on:
-  push: [feature/increase-test-coverage]
+  push: ['feature/increase-test-coverage']
   pull_request:
     paths:
       - 'app/**'
