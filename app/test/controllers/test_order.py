@@ -26,9 +26,9 @@ def test_create(app, order: dict):
 def test_calculate_order_price(app, order: dict):
     created_order, error = OrderController.create(order)
     created_size = created_order['size']
-    created_ingredients = created_order['detail']
+    created_order_details = created_order['detail']
     pytest.assume(error is None)
-    pytest.assume(created_order['total_price'] == round(created_size['price'] + sum(ingredient['ingredient_price'] for ingredient in created_ingredients), 2))
+    pytest.assume(created_order['total_price'] == round(created_size['price'] + sum(item['price'] for item in created_order_details), 2))
 
 
 def test_get_by_id(app, order: dict):
