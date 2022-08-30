@@ -51,17 +51,3 @@ jobs:
         uses: ewjoachim/python-coverage-comment-action@v3
         with:
           GITHUB_TOKEN: ${{ github.token }}
-
-      - name: Store Pull Request Comment to be Posted
-        if: ${{ failure() || steps.coverage_comment.outputs.COMMENT_FILE_WRITTEN == 'true' }}
-        uses: actions/upload-artifact@v3
-        with:
-          name: python-coverage-comment-action
-          path: python-coverage-comment-action.txt
-
-      - name: Post Comment
-        if: ${{ failure() || steps.coverage_comment.outputs.COMMENT_FILE_WRITTEN == 'true' }}
-        uses: ewjoachim/python-coverage-comment-action@v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_PR_RUN_ID: ${{ github.event.pull_request.id }}
