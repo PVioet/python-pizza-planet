@@ -45,7 +45,7 @@ jobs:
       - name: Test and Coverage with pytest
         if: steps.changes.outputs.app == 'true'
         run: |
-          pytest --cov-report xml --cov=$TESTS_DIR
+          pytest --cov-report term --cov=$TESTS_DIR
 
       - name: Coverage Comment
         if: steps.changes.outputs.app == 'true'
