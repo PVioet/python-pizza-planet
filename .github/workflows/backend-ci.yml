@@ -1,8 +1,6 @@
 name: Backend CI Pipeline
 
 on:
-  push:
-    branches: ['feature/increase-test-coverage']
   pull_request:
     paths:
       - 'app/**'
@@ -48,7 +46,21 @@ jobs:
           pytest --cov-report term --cov=$TESTS_DIR
 
       - name: Coverage Comment
-        if: steps.changes.outputs.app == 'true'
+        if: ${{ failure() || steps.changes.outputs.app == 'true' }}
+        id: coverage_comment
         uses: ewjoachim/python-coverage-comment-action@v3
         with:
           GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Store Pull Request Comment to be Posted
+        if: steps.coverage_comment.outputs.COMMENT_FILE_WRITTEN == 'true'
+        uses: actions/upload-artifact@v3
+        with:
+          name: python-coverage-comment-action
+          path: python-coverage-comment-action.txt
+
+      - name: Post Comment
+        uses: ewjoachim/python-coverage-comment-action@v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_PR_RUN_ID: ${{ github.event.pull_request.id }}
