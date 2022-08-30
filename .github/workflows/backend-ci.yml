@@ -29,24 +29,30 @@ jobs:
               - 'app/**'
       
       - name: Setup Python ${{ env.PYTHON_VERSION }}
-        if: steps.changes.outputs.app == 'true'
+        if: steps.changes.outputs.any == 'true'
         uses: actions/setup-python@v2
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Install Dependencies
-        if: steps.changes.outputs.app == 'true'
+        if: steps.changes.outputs.any == 'true'
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Test and Coverage with pytest
+      - name: Lint with flake8
         if: steps.changes.outputs.app == 'true'
+        run: |
+          flake8 --show-source --statistics
+        working-directory: ${{ APP_DIR }}
+
+      - name: Test and Coverage with pytest
+        if: steps.changes.outputs.any == 'true'
         run: |
           pytest --cov-report term --cov=$TESTS_DIR
 
       - name: Coverage Comment
-        if: ${{ failure() || steps.changes.outputs.app == 'true' }}
+        if: ${{ failure() || steps.changes.outputs.any == 'true' }}
         id: coverage_comment
         uses: ewjoachim/python-coverage-comment-action@v3
         with:
