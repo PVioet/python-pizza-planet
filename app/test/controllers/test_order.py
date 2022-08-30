@@ -6,6 +6,7 @@ def test_create(app, order: dict):
     created_order, error = OrderController.create(order)
     size_id = order.pop('size_id', None)
     ingredient_ids = order.pop('ingredients', [])
+    beverage_ids = order.pop('beverages', [])
     pytest.assume(error is None)
     for param, value in order.items():
         pytest.assume(param in created_order)
@@ -15,6 +16,9 @@ def test_create(app, order: dict):
 
     ingredients_in_detail = set(item['ingredient']['_id'] for item in created_order['detail'])
     pytest.assume(not ingredients_in_detail.difference(ingredient_ids))
+
+    beverages_in_detail = set(item['beverage']['_id'] for item in created_order['detail'])
+    pytest.assume(not beverages_in_detail.difference(beverage_ids))
 
 
 def test_calculate_order_price(app, order: dict):
