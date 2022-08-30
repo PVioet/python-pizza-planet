@@ -44,7 +44,7 @@ jobs:
         if: steps.changes.outputs.app == 'true'
         run: |
           flake8 --show-source --statistics
-        working-directory: ${{ APP_DIR }}
+        working-directory: ${{ env.APP_DIR }}
 
       - name: Test and Coverage with pytest
         if: s${{ failure() || steps.changes.outputs.any == 'true' }}
