@@ -13,3 +13,8 @@ def beverage_mock() -> dict:
 @pytest.fixture
 def beverage():
     return beverage_mock()
+
+
+@pytest.fixture
+def beverages():
+    return [beverage_mock() for _ in range(5)]
