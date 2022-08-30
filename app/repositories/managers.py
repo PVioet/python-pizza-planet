@@ -58,13 +58,15 @@ class OrderManager(BaseManager):
     serializer = OrderSerializer
 
     @classmethod
-    def create(cls, order_data: dict, ingredients: List[Ingredient]):
+    def create(cls, order_data: dict, ingredients: List[Ingredient], beverages: List[Beverage]):
         new_order = cls.model(**order_data)
         cls.session.add(new_order)
         cls.session.flush()
         cls.session.refresh(new_order)
-        cls.session.add_all((OrderDetail(order_id=new_order._id, ingredient_id=ingredient._id, ingredient_price=ingredient.price)
+        cls.session.add_all((OrderDetail(order_id=new_order._id, ingredient_id=ingredient._id, price=ingredient.price)
                              for ingredient in ingredients))
+        cls.session.add_all((OrderDetail(order_id=new_order._id, beverage_id=beverage._id, price=beverage.price)
+                             for beverage in beverages))
         cls.session.commit()
         return cls.serializer().dump(new_order)
 
@@ -83,3 +85,7 @@ class IndexManager(BaseManager):
 class BeverageManager(BaseManager):
     model = Beverage
     serializer = BeverageSerializer
+
+    @classmethod
+    def get_by_id_list(cls, ids: Sequence):
+        return cls.session.query(cls.model).filter(cls.model._id.in_(set(ids))).all() or []

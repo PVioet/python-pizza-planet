@@ -14,16 +14,17 @@ def test_create(app, order: dict):
     pytest.assume(created_order['_id'])
     pytest.assume(size_id == created_order['size']['_id'])
 
-    ingredients_in_detail = set(item['ingredient']['_id'] for item in created_order['detail'])
+    ingredients_in_detail = set(item['ingredient']['_id']
+                                for item in created_order['detail'] if item['ingredient'] is not None)
     pytest.assume(not ingredients_in_detail.difference(ingredient_ids))
 
-    beverages_in_detail = set(item['beverage']['_id'] for item in created_order['detail'])
+    beverages_in_detail = set(item['beverage']['_id']
+                              for item in created_order['detail'] if item['beverage'] is not None)
     pytest.assume(not beverages_in_detail.difference(beverage_ids))
 
 
 def test_calculate_order_price(app, order: dict):
     created_order, error = OrderController.create(order)
-    print(created_order)
     created_size = created_order['size']
     created_ingredients = created_order['detail']
     pytest.assume(error is None)
