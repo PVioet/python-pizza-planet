@@ -47,7 +47,7 @@ jobs:
         working-directory: ${{ APP_DIR }}
 
       - name: Test and Coverage with pytest
-        if: steps.changes.outputs.any == 'true'
+        if: s${{ failure() || steps.changes.outputs.any == 'true' }}
         run: |
           pytest --cov-report term --cov=$TESTS_DIR
 
