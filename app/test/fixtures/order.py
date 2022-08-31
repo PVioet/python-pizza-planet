@@ -24,12 +24,14 @@ def client_data():
 
 
 @pytest.fixture
-def order(create_ingredients, create_size, client_data) -> dict:
+def order(create_beverages, create_ingredients, create_size, client_data) -> dict:
     ingredients = [ingredient.get('_id') for ingredient in create_ingredients]
+    beverages = [beverage.get('_id') for beverage in create_beverages]
     size_id = create_size.json['_id']
     return {
         **client_data,
         'ingredients': ingredients,
+        'beverages': beverages,
         'size_id': size_id
     }
 
