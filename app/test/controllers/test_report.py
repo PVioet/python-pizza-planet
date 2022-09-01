@@ -24,16 +24,16 @@ def test_generate(app, orders: list):
     most_requested_ingredients = []
     for ingredient_id in most_requested_ingredient_ids:
         ingredient, _ = IngredientController.get_by_id(ingredient_id)
-        most_requested_ingredients.append(ingredient['name'])
+        most_requested_ingredients.append([ingredient['name'], most_requested_ingredient_count])
 
     most_requested_beverage_count = max(beverage_count.values())
     most_requested_beverage_ids = [beverage_id for beverage_id, count in beverage_count.items() if count == most_requested_beverage_count]
     most_requested_beverages = []
     for beverage_id in most_requested_beverage_ids:
         beverage, _ = BeverageController.get_by_id(beverage_id)
-        most_requested_beverages.append(beverage['name'])
+        most_requested_beverages.append([beverage['name'], most_requested_beverage_count])
 
-    month_with_more_revenue = max(month_count, key=month_count.get)
+    month_with_more_revenue = list(max(month_count.items(), key=lambda x: x[1]))
     best_customers = sorted(client_count.items(), key=lambda x: x[1], reverse=True)[:3]
     best_customers = list(map(list, best_customers))
 
