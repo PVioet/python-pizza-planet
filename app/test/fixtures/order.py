@@ -1,7 +1,9 @@
 import pytest
+from datetime import datetime
 
 from ..utils.functions import (shuffle_list, get_random_sequence, get_random_sample,
-                               get_random_string, get_random_phone, get_random_choice)
+                               get_random_string, get_random_phone, get_random_choice,
+                               get_random_date)
 
 
 def client_data_mock() -> dict:
@@ -53,7 +55,8 @@ def orders(create_beverages, create_ingredients, create_size, clients_data) -> l
             **client_data,
             'ingredients': get_random_sample(ingredients, 3),
             'beverages': get_random_sample(beverages, 2),
-            'size_id': size_id
+            'size_id': size_id,
+            'date': get_random_date(start=datetime(2020, 1, 1), end=datetime(2020, 5, 31))
         })
     return orders
 

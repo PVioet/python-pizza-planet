@@ -1,5 +1,6 @@
 import random
 import string
+from datetime import datetime
 from typing import Any, Union
 
 
@@ -39,3 +40,7 @@ def get_random_sequence(length: int = 10) -> str:
 
 def get_random_phone() -> str:
     return get_random_sequence(10)
+
+
+def get_random_date(start=datetime(1970, 1, 1), end=datetime.now()) -> datetime:
+    return datetime.utcfromtimestamp(random.uniform(start.timestamp(), end.timestamp()))
