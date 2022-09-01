@@ -36,7 +36,3 @@ class BaseController:
             return cls.manager.update(_id, new_values), None
         except (SQLAlchemyError, RuntimeError) as ex:
             return None, str(ex)
-
-    @classmethod
-    def generate(cls):
-        pass

@@ -13,6 +13,10 @@ def get_random_choice(choices: Union[tuple, list]) -> Any:
     return random.choice(choices)
 
 
+def get_random_sample(iterable: Union[tuple, list], length: int = 10) -> list:
+    return random.sample(iterable, length)
+
+
 def get_random_price(lower_bound: float, upper_bound: float) -> float:
     return round(random.uniform(lower_bound, upper_bound), 2)
 

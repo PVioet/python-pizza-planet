@@ -1,8 +1,11 @@
 import pytest
-from app.controllers import ReportController
+from app.controllers import ReportController, OrderController
 
 
-def test_generate(app):
+def test_generate(app, orders: list):
+    for order in orders:
+        _, _ = OrderController.create(order)
+
     created_report, error = ReportController.generate()
     pytest.assume(error is None)
     pytest.assume(created_report['ingredient'])
