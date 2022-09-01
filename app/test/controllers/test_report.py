@@ -25,6 +25,7 @@ def test_generate(app, orders: list):
     for ingredient_id in most_requested_ingredient_ids:
         ingredient, _ = IngredientController.get_by_id(ingredient_id)
         most_requested_ingredients.append(ingredient['name'])
+        
     most_requested_beverage_count = max(beverage_count.values())
     most_requested_beverage_ids = [beverage_id for beverage_id, count in beverage_count.items() if count == most_requested_beverage_count]
     most_requested_beverages = []
