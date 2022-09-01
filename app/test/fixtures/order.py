@@ -37,26 +37,30 @@ def order(create_beverages, create_ingredients, create_size, client_data) -> dic
 
 
 @pytest.fixture
-def create_order(client, order_uri, create_ingredients, create_size, client_data) -> list:
+def create_order(client, order_uri, create_beverages, create_ingredients, create_size, client_data) -> list:
     ingredients = [ingredient.get('_id') for ingredient in create_ingredients]
+    beverages = [beverage.get('_id') for beverage in create_beverages]
     size_id = create_size.json['_id']
     response = client.post(order_uri, json={
         **client_data,
         'ingredients': shuffle_list(ingredients)[:5],
+        'beverages': shuffle_list(beverages)[:5],
         'size_id': size_id
     })
     return response
 
 
 @pytest.fixture
-def create_orders(client, order_uri, create_ingredients, create_sizes, client_data) -> list:
+def create_orders(client, order_uri, create_beverages, create_ingredients, create_sizes, client_data) -> list:
     ingredients = [ingredient.get('_id') for ingredient in create_ingredients]
+    beverages = [beverage.get('_id') for beverage in create_beverages]
     sizes = [size.get('_id') for size in create_sizes]
     orders = []
     for _ in range(10):
         new_order = client.post(order_uri, json={
             **client_data,
             'ingredients': shuffle_list(ingredients)[:5],
+            'beverages': shuffle_list(beverages)[:5],
             'size_id': get_random_choice(sizes)
         })
         orders.append(new_order.json)
