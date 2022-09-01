@@ -27,4 +27,5 @@ class ReportManager(BaseManager):
     def get_best_customers(cls, limit: int = 3):
         best_customers = cls.session.query(Order.client_name, func.sum(Order.total_price)).group_by(
             Order.client_name).order_by(func.sum(Order.total_price).desc()).limit(limit).all()
+        best_customers = list(map(list, best_customers))
         return best_customers or []

@@ -35,6 +35,7 @@ def test_generate(app, orders: list):
     
     month_with_more_revenue = max(month_count, key=month_count.get)
     best_customers = sorted(client_count.items(), key=lambda x: x[1], reverse=True)[:3]
+    best_customers = list(map(list, best_customers))
 
     created_report, error = ReportController.generate()
     pytest.assume(error is None)
