@@ -49,7 +49,7 @@ def orders(create_beverages, create_ingredients, create_size, clients_data) -> l
     beverages = [beverage.get('_id') for beverage in create_beverages]
     size_id = create_size.json['_id']
     orders = []
-    for _ in range(10):
+    for _ in range(50):
         client_data = get_random_choice(clients_data)
         orders.append({
             **client_data,
