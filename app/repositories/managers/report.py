@@ -24,7 +24,8 @@ class ReportManager(BaseManager):
 
     @classmethod
     def get_month_with_more_revenue(cls):
-        date, amount = cls.session.query(func.strftime('%Y-%m', Order.date).label('month'), func.sum(Order.total_price).label('amount')).group_by('month').order_by(desc('amount')).first()
+        date, amount = cls.session.query(func.strftime('%Y-%m', Order.date).label('month'), func.sum(Order.total_price).label('amount')).group_by(
+            'month').order_by(desc('amount')).first()
         return [date, amount] or [None, 0]
 
     @classmethod
