@@ -1,4 +1,4 @@
-@startuml
+@startuml deployment
 !include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/C4/C4.puml
 !include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/C4/C4_Deployment.puml
 
