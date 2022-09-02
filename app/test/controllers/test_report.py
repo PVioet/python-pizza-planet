@@ -43,3 +43,12 @@ def test_generate(app, orders: list):
     pytest.assume(created_report['beverage'] in most_requested_beverages)
     pytest.assume(created_report['month'] == month_with_more_revenue)
     pytest.assume(created_report['customers'] == best_customers)
+
+
+def test_generate_with_no_data(app):
+    created_report, error = ReportController.generate()
+    pytest.assume(error is None)
+    pytest.assume(not created_report['ingredient'])
+    pytest.assume(not created_report['beverage'])
+    pytest.assume(not created_report['month'])
+    pytest.assume(not created_report['customers'])
