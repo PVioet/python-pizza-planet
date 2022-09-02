@@ -1,0 +1,38 @@
+@startuml deployment
+!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/C4/C4.puml
+!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/C4/C4_Deployment.puml
+
+!include ./icons/lambda.puml
+!include ./icons/aws_rds.puml
+!include ./icons/api_gateway.puml
+!include ./icons/aws_amplify.puml
+!include ./icons/aws_ecr.puml
+!include ./icons/pizza_planet.puml
+
+AddRelTag("release", $lineStyle=DashedLine(), $legendText="Once per release (dashed)")
+
+
+title \nDEPLOYMENT DIAGRAM
+Deployment_Node(aws_cloud, "AWS Cloud") {
+    Container(aws_lambda, "Pizza Planet BE", "AWS Lambda", "Serverless Flask application\nPulled from ECR", $sprite="lambda")
+    Container(aws_api_gateway, "Amazon API Gateway", "API Gateway", $sprite="api_gateway")
+    Container(aws_amplify, "Pizza Planet UI", "AWS Amplify",, $sprite="aws_amplify")
+    Container(aws_ecr, "BE Image", "AWS ECR", $sprite="aws_ecr")
+    Deployment_Node_R(aws_vpc, "AWS Virtual Private Cloud"){
+        Deployment_Node(aws_private_subnet, "Private Subnet"){
+            ContainerDb(aws_rds, "Pizza Planet DB", "AWS RDS", "Relational Database", $sprite="aws_rds")
+        }
+    }
+}
+System_Ext(pizza_planet, "Pizza Planet Page", "JavaScript", $sprite="pizza_planet")
+
+Rel_R(aws_lambda, aws_rds, "Reads/Writes", "VPC Link through Security Group")
+Rel_D(aws_lambda, aws_ecr, "Pulls", $tags="Once per release", $tags="release")
+
+Rel(aws_api_gateway, aws_lambda, "Requests", "Proxy")
+
+Rel(aws_amplify, pizza_planet, "Serves")
+Rel(pizza_planet, aws_api_gateway, "Requests", "HTTPS")
+
+SHOW_LEGEND()
+@enduml

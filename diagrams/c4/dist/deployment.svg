@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1064px" preserveAspectRatio="none" style="width:633px;height:1064px;background:#FFFFFF;" version="1.1" viewBox="0 0 633 1064" width="633px" zoomAndPan="magnify"><defs/><g><rect height="45.2188" style="stroke:#00000000;stroke-width:1.0;fill:none;" width="177" x="221" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="4" x="307.5" y="24.5332"> </text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="167" x="226" y="42.1426">DEPLOYMENT DIAGRAM</text><!--MD5=[3fc28c7b001b546c524404481d6f8409]
+cluster aws_cloud--><g id="cluster_aws_cloud"><rect fill="#FFFFFF" height="675" rx="2.5" ry="2.5" style="stroke:#A2A2A2;stroke-width:1.0;" width="620" x="7" y="256.2188"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="87" x="273.5" y="274.8281">AWS Cloud</text></g><!--MD5=[9398ff49558d391ae56708b789ddb65f]
+cluster aws_vpc--><g id="cluster_aws_vpc"><rect fill="#FFFFFF" height="273" rx="2.5" ry="2.5" style="stroke:#A2A2A2;stroke-width:1.0;" width="232" x="371" y="476.2188"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="197" x="388.5" y="494.8281">AWS Virtual Private Cloud</text></g><!--MD5=[b44be45af22538475d0b3f6beb27a8aa]
+cluster aws_private_subnet--><g id="cluster_aws_private_subnet"><rect fill="#FFFFFF" height="202" rx="2.5" ry="2.5" style="stroke:#A2A2A2;stroke-width:1.0;" width="184" x="395" y="523.2188"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="112" x="431" y="541.8281">Private Subnet</text></g><!--MD5=[f9af842696453729b2ea1787ecca78d6]
+entity aws_lambda--><g id="elem_aws_lambda"><rect fill="#438DD5" height="156.0469" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="201" x="23.5" y="557.7188"/><image height="48" width="48" x="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACE0lEQVR42s1ZMUoEQRCsv/kAP+AD/IAP8AEaGYmZgYHhZUZiJpgYiJwgHMjBwYGigiIIa8HAcrA7tT3dN+4OHRzc3m5NV/V09R52jh5EHM5emqb5+P4VwQsOLhf6PvaABdDgup6/TwsQ197Z07QAnd6spgVo+fYzLUBcvHhagO4Wn9UBsZ7JxXz1xeDzUqRS71375891AfXGxe06B2h2/zoCIKYhB4jJGwEQgzzmMB1fLUcAJFij2kYARLGLcotIG+5fCtYi0vYDEqxx7Z48/jcgzZq7tfkBkZcarc0JyNJSfK7NA4j6EN0j6No8gPikeq4NNchqFyuxLiAjWRFpoxJZbteGSmS5XRsqkeVubdgKWdSKaG1F0sZWyGL+aIOEa7O3NljIstS2sJFFrg1BsjbtGPUbd23RMSidxYkRfbFR2ohUVpeIuGuDm6ze3kkbFHRtWUCiakThkMGga4OvsoTXEXm1tDY4yNIHnba2g64NpWRZClhIe9C1oZQsS/VqaXddG9PWmgIUkWWcJfSuWsaJg2dBm85UJbAfg0VGQswkRMBvuydcShLsZBXNfrq1CXnBSJbjdR3lX4qJe4aFLN9Ao6s1t20MkuV+B+UwmZQpBsmK/G2gx+3eBgx9ZjgGq1JpM4vE0W4bZJpPJawU/LwZ8de8OdfG4uf9u+lH/JFFFo+lx22LEbs6oFT/zBORWU6yP33d7nOgnii4AAAAAElFTkSuQmCC" y="567.7188"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="121" x="63.5" y="632.3281">Pizza Planet BE</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="82.5" y="648.3008">[AWS Lambda]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="122" y="665.4707"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="37.5" y="683.0801">Serverless Flask application</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="72" y="700.6895">Pulled from ECR</text></g><!--MD5=[8bd238f6f8d4569a10b93697ca7fefff]
+entity aws_api_gateway--><g id="elem_aws_api_gateway"><rect fill="#438DD5" height="103.2188" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="183" x="32.5" y="295.2188"/><image height="48" width="48" x="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB/UlEQVR42u2YP0pEMRCHczcP4AU8gBfwAB5AKyuxs7Cw3M5K7AQbC5EVhAVZWBAUFRRB0A9+OITw/iT78rKLRh4y+zYz+XZmMpnEbezdrNXjKlAFKgq0O3k4uXyMH89gVMYC2j6+ny7e58+f8SoMRgXFzEBC+f79i7duKvFYLhLl9eMLGf+nAu2fzVFEHRmH9WK5GBTLA6ynAh1eLCTvnM5isFw3Clb8r4YABVhtQQyBzqcvinqAkgsowGK6HiD5ppEmI5DioPBFAbUVj4xAWh9MlwGIORBkVPPxcxE2D255EJQcCFplIwLJivJddU8OoyIjbB3dEWvzikZ2m8rjobULWQVaCkgJtGIgIPyNXV/5L4sCTa6fkFnnNre0/PpbDiioMVr2/kzq40oAafMPKh4fr2ZvwWT8Z3AJD5ElZIxtQ3zUSz+fePS+XA5Z96gGQS9JKb+rLArE3JYofueP7Gd66TrUXSpXANRYD+vWUYF6gEga5Q2doQTLJNYXgmqSmrVCHaP8pJODlSI4NKB0x6jeWf6wktMo/N0cKnYuiwWi1xkbSB1L/0ERT9ppmo4iiN1wIAxits1+6+2HzntaRNJUELWSk4A0JYrGoSbJcj/tfkhbupHZOo8H8nUx5bdNg670MCSy1Cu9SI5l7hgVx9RLz47o1HvqCvQ/gH4AaO+Jj45fisEAAAAASUVORK5CYII=" y="305.2188"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="163" x="42.5" y="369.8281">Amazon API Gateway</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="76" x="86" y="385.8008">[API Gateway]</text></g><!--MD5=[63b9c3698b8bf97335b7a74c8bafa7a1]
+entity aws_amplify--><g id="elem_aws_amplify"><rect fill="#438DD5" height="91.2188" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="134" x="251" y="301.2188"/><image height="36" width="48" x="294" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAkCAIAAABAJy5dAAAB+ElEQVR42sVXMUoEQRDsv/kAP+AD/IAP8AEaGYmZgYHhZUZiJpgYiJwgHMjBwYGigiIIWnDQtDN93T29c+swwe7s7U5dd1V1D20d3KXn9tH92+f3/OWLJ24nt89DvklDXsY8u17+VGPn5OHfAGEiKgUghGpsQLunjxyG/clTHSQsjgoIW04XH3yL6xrTeID2zmerLUHq1QqiVQM6vlqMBIhJczN758XL6WuNiRFvEFAhK0RL5rEYEvFGAIHLxZaIFj89vJgPtwDKsUcO4OhoAc0pQxYMQbmI+wMCT+stwegg4m6AwB6WDPRsCEq1AEihM6DiozVXpE+ivqbZHQLEG/CKWy7SFkBNpJFcqcuFtAAVMfLeAVBBUo68Wy5yFkCtTig/apeLnAVQa69TVKjuFmABUnlQCFi1AE6ralq2BZAtdYO2Qa60WgC5UncZoHIlbQE6IFVBhkZsrjRZAMU3MOLsWgD+TCT7OiA1Ba7P2hZQ28e6HpcSUo+LwO1xfUBq1xds19V3mSuqBdTHXMpJPXdojBxzyeVBpCIO6XFl3/IHkKoU/BqhxiN3Dulx5dGF7NNnfLATuh2jbQFkeFfrCJYLGzEZUm8dMgxpC6B1FTs32K7scmEcXUgNYHpIyahRt/sWsJtW+cbLXaYMAy7qp9ICgL74AdL6C+MystZCZlpvAAAAAElFTkSuQmCC" y="311.2188"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="114" x="261" y="363.8281">Pizza Planet UI</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="77" x="279.5" y="379.8008">[AWS Amplify]</text></g><!--MD5=[2c363f3a01dca2019459fc4cc948520f]
+entity aws_ecr--><g id="elem_aws_ecr"><rect fill="#438DD5" height="103.2188" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="93" x="77.5" y="812.2188"/><image height="48" width="48" x="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAByklEQVR42u2YwUoEMQyG5918AF/AB/AFfAAfQE+exJsHDx735km8CV48iKwgLMjCwoKigiII+sOPIXSmmSGt7R66DMvObCf52qRJk27r4G6jrq4BNaAGNHTtnj7Obp+3j+43Auhy/vrz9zm+WtUEgnpy7J0vcHt2veYtFqw0EFRSNyyln8Nq89UHnuO7EJBWGXMaLNggbn4gKICat8/vnZOH0cGHF0ti4Ud+IJ90PYeJjjUOhMWAON/6i5WXL1+QcLN4TwWCCAiCuPQYgxXixPZnTx4gvJa+hwftbq90FIhbKReKhIlRFywBRFHiQIjsCKF1gCR20wXFDQyr/ReQ6KaNsFUl2cG1je2WH6gfJrhVBcJOLJmB+mGCZwEd2QsBibsw82s5gfoSQBw8uHcqADG3x0J5NSBDTgNqQH4g5tQgUVQDCgJ0TSC7HnICcX5TDooaSHJqrGLkYE9ylVLGPnFqINaNSF52/YQBxjy79LpHgPobKpAz5UDcpdcMNlBwMMpWl4kF+84RA5KDUcyIGSrXoLtgALnrJ0+zIVCmgfBXYv3k7H6IORByGI6156Z0iZL6Q7IYAuTuwuTsoIEjvXHWurANqAEVu34B87QCUi8nLrwAAAAASUVORK5CYII=" y="822.2188"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="73" x="87.5" y="886.8281">BE Image</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="62" x="93" y="902.8008">[AWS ECR]</text></g><!--MD5=[05d8af9bcd9b70a52be969151ee1b205]
+entity aws_rds--><g id="elem_aws_rds"><path d="M411,572.2188 C411,562.2188 487,562.2188 487,562.2188 C487,562.2188 563,562.2188 563,572.2188 L563,699.6563 C563,709.6563 487,709.6563 487,709.6563 C487,709.6563 411,709.6563 411,699.6563 L411,572.2188 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M411,572.2188 C411,582.2188 487,582.2188 487,582.2188 C487,582.2188 563,582.2188 563,572.2188 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><image height="48" width="48" x="463" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACiElEQVR42u2YTUoEMRCFczcP4AU8gBfwAB5AV67EnQsXLmfnStwJblyIjCAMyMCAoKigCIJ+8KSInU66pzIMLjIUQ/onlZf6eVXpsLF3868kNEANUAPUAP3KdPH+/fd3cvnoW2PndNZRNX/+XBqQzdydPBxeLJDt43sfoM2DW2lA1dXsTZo9gGQk9rcqd2wd3Unt68eXBxBQ2BOD/bN5PRqpwu+C5QEkHPwzxuD1aCbXTxZSHkAWxaCpCWpt6Xz6El8uDYjl4yjmEt/7ADFXtrFIKuytiocwPsZjMXaPMFAqkVbrJkaWN1IhZUzsJum9PkDikpwluMkjCKzAfrWAcA3aLdHEJeUpuI/XCBfbwEjuCIMkK3UAMoaMnYXviFAEuPxzGTtOgEgOKeHRIN2HQWLtaAGiOBPBDAA1BAy45CYuYwp3OhNF/Tz1ANLCaWzq/pi61vsaVixPD+XIza1kLJcTcalc1ttHeJg6Vy4sRFDNjolWvIAw4NLqeQ7QCkpH6jItn/ZMCn8mqnj1ukaPlgYk6ssBSldKOSkHSLHvyTKRb+9KcW0qFNTUZXJoobaEMgkppTucZt7BiipeYgH1lmA1IogBWSNbztBhphbnGiy5jDFrY/k0hkDTiSFeFsQxBS6MbIoxRgyos0tuSnpjiLmE/8iW3FNcZZhCr83aesfRhwTfKcISHl/gCPVDcSEDkO+UEmqOEAphACkfQakw7+XDWkB4JDY4QTpYLgplJCZ91BbcPYqplTI1gOJC5GzyTUV8gnGLMClPnaVDeaS2phJNbBjQ+A+KKmeVR8S0zisZ/R8bMJK6C3fuqO1XG+n/2CBmixvklXyOkUJntW9f0BqgBqgBWof8ACwRNOvNDdeXAAAAAElFTkSuQmCC" y="586.2188"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="122" x="426" y="650.8281">Pizza Planet DB</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="62" x="456" y="666.8008">[AWS RDS]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="485" y="683.9707"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="425" y="701.5801">Relational Database</text></g><!--MD5=[942bdb311226378be60cf98f9cca8580]
+entity pizza_planet--><g id="elem_pizza_planet"><rect fill="#999999" height="115.3438" rx="2.5" ry="2.5" style="stroke:#8A8A8A;stroke-width:0.5;" width="157" x="142.5" y="63.2188"/><image height="40" width="48" x="197" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAoCAIAAAA35e4mAAABtElEQVR42u2YIZOEMAyF+///wSkcDodbhcPhcCgcDofbe7NvptOjbdoGuN25I4rdSZuvfWlSMF8fZuYG+idAVVWt6/qMWNu2vwe0LMsz28B9IVARimvnAzVN44eZ57mua995GAbfeRzH04CmadKtWDfQFMkU9JGDbdtWxCQBQRRMwRlBFnNzRQw64NDlM0WBHo+HnQJpkaRJxstkMsnxwt64eiXj4QRYB6y2DChzNfZAdV3nJlzf98k0VwLJels3rB6lwVVZnXBGGIN0Tm4POILaxURB7ZahzcHtwQOLnqsy2pzQNORM2gNB/nyg5WUuinwCckKYInzhtFvtckwDlDljae+8BIgVJb9fCkD+zUm5QwfNRvErlh5o1zWLRLS3Tb8p6YGw21Bt+Gn4J1amLwc6YicAKW7H5wOhFGEkuyYMWkARpA7g2Cbxk3WZz3iwerFbsVTSga3mEBDj8U7tNs7+ZSyGwYymM6F3uc9ioQRivbHdgJvBXoH7BqZmYG7ernW4KFzYCUAfndTvB1K/FibNnbkA6Gojlt8Q3wYUu7SY4Isz2kJzsSFEsNjeH6xuoD8H9A2ZN6vNRvllpgAAAABJRU5ErkJggg==" y="73.2188"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="137" x="152.5" y="129.8281">Pizza Planet Page</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="219" y="147.877"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="190.5" y="165.4863">JavaScript</text></g><!--MD5=[0e4287250d299b7f9c0a8f5357a5d5c2]
+link aws_lambda to aws_rds--><g id="link_aws_lambda_aws_rds"><path d="M224.63,635.7188 C280.71,635.7188 349.74,635.7188 402.92,635.7188 " fill="none" id="aws_lambda-to-aws_rds" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="410.98,635.7188,402.98,632.7188,402.98,638.7188,410.98,635.7188" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="77" x="279.25" y="599.1758">Reads/Writes</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="147" x="242.75" y="614.2695">[VPC Link through Security</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="37" x="299.25" y="629.3633">Group]</text></g><!--MD5=[5125293ac3289f116d4b5d1a7d530be2]
+link aws_lambda to aws_ecr--><g id="link_aws_lambda_aws_ecr"><path d="M124,713.8588 C124,743.2988 124,776.3488 124,803.8288 " fill="none" id="aws_lambda-to-aws_ecr" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#666666" points="124,812.1588,127,804.1588,121,804.1588,124,812.1588" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="28" x="125" y="778.6758">Pulls</text></g><!--MD5=[2db9e03c733e1aefcea2c7ba248e19cf]
+link aws_api_gateway to aws_lambda--><g id="link_aws_api_gateway_aws_lambda"><path d="M124,398.3688 C124,440.1388 124,500.2988 124,549.4688 " fill="none" id="aws_api_gateway-to-aws_lambda" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="124,557.5688,127,549.5688,121,549.5688,124,557.5688" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="54" x="125" y="441.6758">Requests</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="37" x="133.5" y="456.7695">[Proxy]</text></g><!--MD5=[f4db7ed27a838dd700278ac4125b944d]
+link aws_amplify to pizza_planet--><g id="link_aws_amplify_pizza_planet"><path d="M298.73,301.2088 C284.46,268.2587 264.8,222.8687 248.83,185.9788 " fill="none" id="aws_amplify-to-pizza_planet" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="245.48,178.2387,245.9119,186.7718,251.4162,184.3838,245.48,178.2387" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="40" x="270" y="229.1758">Serves</text></g><!--MD5=[4074ff4ea8a16c583c4590ebe4fa5734]
+link pizza_planet to aws_api_gateway--><g id="link_pizza_planet_aws_api_gateway"><path d="M196.52,178.2387 C182.07,211.6187 163.81,253.7888 149.23,287.4688 " fill="none" id="pizza_planet-to-aws_api_gateway" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="145.98,294.9488,151.9061,288.794,146.3979,286.415,145.98,294.9488" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="54" x="183" y="221.6758">Requests</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="45" x="187.5" y="236.7695">[HTTPS]</text></g><rect height="104.0469" rx="7.5" ry="7.5" style="stroke:#00000000;stroke-width:1.0;fill:none;" width="217" x="394" y="944.2188"/><rect height="17.6094" style="stroke:none;stroke-width:1.0;fill:none;" width="205" x="400" y="952.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="53" x="400" y="966.752">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="453" y="966.752"> </text><rect fill="#438DD5" height="17.6094" style="stroke:none;stroke-width:1.0;" width="205" x="400" y="969.8281"/><text fill="#3C7FC0" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="14" x="404" y="984.3613">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="418" y="984.3613"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="426" y="984.3613">container</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="489" y="984.3613"> </text><rect fill="#999999" height="17.6094" style="stroke:none;stroke-width:1.0;" width="205" x="400" y="987.4375"/><text fill="#8A8A8A" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="14" x="404" y="1001.9707">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="418" y="1001.9707"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="426" y="1001.9707">external_system</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="532" y="1001.9707"> </text><rect fill="#FFFFFF" height="17.6094" style="stroke:none;stroke-width:1.0;" width="205" x="400" y="1005.0469"/><text fill="#A2A2A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="14" x="404" y="1019.5801">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="418" y="1019.5801"> </text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="426" y="1019.5801">node</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="462" y="1019.5801"> </text><text fill="#66622E" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="14" x="404" y="1037.1895">─</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="418" y="1037.1895"> </text><text fill="#66622E" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="426" y="1037.1895">Once per release (dashed)</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="601" y="1037.1895"> </text><line style="stroke:#00000000;stroke-width:1.0;" x1="400" x2="605" y1="952.2188" y2="952.2188"/><line style="stroke:#00000000;stroke-width:1.0;" x1="400" x2="605" y1="969.8281" y2="969.8281"/><line style="stroke:#00000000;stroke-width:1.0;" x1="400" x2="605" y1="987.4375" y2="987.4375"/><line style="stroke:#00000000;stroke-width:1.0;" x1="400" x2="605" y1="1005.0469" y2="1005.0469"/><line style="stroke:#00000000;stroke-width:1.0;" x1="400" x2="605" y1="1022.6563" y2="1022.6563"/><line style="stroke:#00000000;stroke-width:1.0;" x1="400" x2="605" y1="1040.2656" y2="1040.2656"/><line style="stroke:#00000000;stroke-width:1.0;" x1="400" x2="400" y1="952.2188" y2="1040.2656"/><line style="stroke:#00000000;stroke-width:1.0;" x1="605" x2="605" y1="952.2188" y2="1040.2656"/><!--MD5=[2e91f2e0bb2ae4f76dc78d16bfe3cdbd]
+@startuml deployment
+!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/C4/C4.puml
+!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/C4/C4_Deployment.puml
+
+!include ./icons/lambda.puml
+!include ./icons/aws_rds.puml
+!include ./icons/api_gateway.puml
+!include ./icons/aws_amplify.puml
+!include ./icons/aws_ecr.puml
+!include ./icons/pizza_planet.puml
+
+AddRelTag("release", $lineStyle=DashedLine(), $legendText="Once per release (dashed)")
+
+
+title \nDEPLOYMENT DIAGRAM
+Deployment_Node(aws_cloud, "AWS Cloud") {
+    Container(aws_lambda, "Pizza Planet BE", "AWS Lambda", "Serverless Flask application\nPulled from ECR", $sprite="lambda")
+    Container(aws_api_gateway, "Amazon API Gateway", "API Gateway", $sprite="api_gateway")
+    Container(aws_amplify, "Pizza Planet UI", "AWS Amplify",, $sprite="aws_amplify")
+    Container(aws_ecr, "BE Image", "AWS ECR", $sprite="aws_ecr")
+    Deployment_Node_R(aws_vpc, "AWS Virtual Private Cloud"){
+        Deployment_Node(aws_private_subnet, "Private Subnet"){
+            ContainerDb(aws_rds, "Pizza Planet DB", "AWS RDS", "Relational Database", $sprite="aws_rds")
+        }
+    }
+}
+System_Ext(pizza_planet, "Pizza Planet Page", "JavaScript", $sprite="pizza_planet")
+
+Rel_R(aws_lambda, aws_rds, "Reads/Writes", "VPC Link through Security Group")
+Rel_D(aws_lambda, aws_ecr, "Pulls", $tags="Once per release", $tags="release")
+
+Rel(aws_api_gateway, aws_lambda, "Requests", "Proxy")
+
+Rel(aws_amplify, pizza_planet, "Serves")
+Rel(pizza_planet, aws_api_gateway, "Requests", "HTTPS")
+
+SHOW_LEGEND()
+@enduml
+
+@startuml deployment
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor transparent
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor transparent
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+skinparam database<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+skinparam queue<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+skinparam actor<<node>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+skinparam person<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+
+
+skinparam rectangle<<node>> {
+    FontStyle normal
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sprite $lambda [48x48/16] {
+00000000005FEEEEEEEEEEF4000000000000000000000000
+00000000005FFFFFFFFFFFFA000000000000000000000000
+00000000005FFFFFFFFFFFFF200000000000000000000000
+00000000005FFFFFFFFFFFFF700000000000000000000000
+00000000005FFFFFFFFFFFFFD00000000000000000000000
+00000000005FFFFFFFFFFFFFF50000000000000000000000
+00000000005FFFFFFFFFFFFFFB0000000000000000000000
+00000000004DCCBBBEFFFFFFFF3000000000000000000000
+000000000000000008FFFFFFFF9000000000000000000000
+000000000000000003FFFFFFFFE000000000000000000000
+000000000000000000DFFFFFFFF600000000000000000000
+0000000000000000008FFFFFFFFC00000000000000000000
+0000000000000000004FFFFFFFFF30000000000000000000
+0000000000000000000DFFFFFFFF90000000000000000000
+00000000000000000008FFFFFFFFF1000000000000000000
+00000000000000000004FFFFFFFFF7000000000000000000
+00000000000000000009FFFFFFFFFD000000000000000000
+0000000000000000005FFFFFFFFFFF400000000000000000
+000000000000000001EFFFFFFFFFFFA00000000000000000
+00000000000000000AFFFFFFFFFFFFF20000000000000000
+00000000000000005FFFFFFFFFFFFFF80000000000000000
+0000000000000001EFFFFFFFFFFFFFFD0000000000000000
+000000000000000AFFFFFFFFFFFFFFFF5000000000000000
+000000000000005FFFFFFFFFFFFFFFFFB000000000000000
+00000000000001EFFFFFFFFFFFFFFFFFF300000000000000
+0000000000000AFFFFFFFFFDDFFFFFFFF800000000000000
+0000000000005FFFFFFFFFF16FFFFFFFFE10000000000000
+000000000001FFFFFFFFFF803FFFFFFFFF60000000000000
+00000000000AFFFFFFFFFC000BFFFFFFFFC0000000000000
+00000000005FFFFFFFFFF20105FFFFFFFFF3000000000000
+0000000001EFFFFFFFFF600000DFFFFFFFF9000000000000
+000000000AFFFFFFFFFA0000007FFFFFFFFF100000000000
+000000006FFFFFFFFFE10000002FFFFFFFFF700000000000
+00000001FFFFFFFFFF400000000AFFFFFFFFD00000000000
+0000000AFFFFFFFFF80000000004FFFFFFFFF40000000000
+0000006FFFFFFFFFC00000000000DFFFFFFFFA0000000000
+000001FFFFFFFFFF3000000000007FFFFFFFFF2000004500
+00000AFFFFFFFFF70000000000001FFFFFFFFF80049DFF10
+00005FFFFFFFFFB000000000000009FFFFFFFFD9EFFFFF50
+0001FFFFFFFFFF1000000000000003FFFFFFFFFFFFFFFFA0
+000AFFFFFFFFF50000000000000000CFFFFFFFFFFFFFFFF1
+005FFFFFFFFFA000000000000000006FFFFFFFFFFFFFFFF5
+01FFFFFFFFFE0000000000000000001EFFFFFFFFFFFFFFFB
+0AFFFFFFFFF400000000000000000009FFFFFFFFFFFFFFF9
+7FFFFFFFFF8000000000000000000003FFFFFFFFFFFE9400
+68777888880000000000000000000000BFFFFFFFD8400000
+000000000000000000000000000000005FFFFC7200000000
+000000000000000000000000000000000CB5100000000000
+}
+
+
+skinparam folderBackgroundColor<<AWS LAMBDA>> White
+sprite $aws_rds [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+00000000CFFFFF80000000000000000004FFFFFD00000000
+00000000FFD57730000000000000000001775BFF00000000
+00000000FCF40000000000000000000000002FCE00000000
+00000000F45F600000000000000000000005F82F00000000
+00000000F606F7000000000000000000005F904F00000000
+00000000F8007F80000000000000000006FA006F00000000
+00000000830008C000000000000000000890002800000000
+00000000000000000000479AA97510000000000000000000
+000000000000000000AFFFEEEEFFFB000000000000000000
+00000000000000000BF5100000015DD00000000000000000
+0000000000004D700FC00000000009F20BF6000000000000
+00000000001BFD400FFFEA8878AEFFF203BFE30000000000
+0000000002FE30001F449DEFFED953F30001CF5000000000
+000000001FB000001F300000000000F3000008F300000000
+00000000BF0000000FA00000000007F2000000CF00000000
+00000000F70000000FFFC865568BFFF20000004F00000000
+00000000F80000001F56CFFFFFFD85F30000005F00000000
+00000000AF0000001F300000100000F3000000ED00000000
+000000000EE100000F900000000006F200000BF100000000
+0000000001EF60000FFFA7544579EFF20004FF3000000000
+000000000009FF601F67DFFFFFFE85F306EFB00000000000
+0000000000001A601F300001110000F30AC3000000000000
+00000000000000000DF4000000003DF10000000000000000
+000000000000000001CFFEBAAAEFFD300000000000000000
+0000000000000000000279BEECA720000000000000000000
+00000000410005A000000000000000000770001400000000
+00000000F8005FA0000000000000000007F7006F00000000
+00000000F705F9000000000000000000007F605F00000000
+00000000F43F900000000000000000000006F52F00000000
+00000000FAF70000000000000000000000004FAE00000000
+00000000FFD35520000000000000000001553BFF00000000
+00000000DFEFFF80000000000000000004FFFEFD00000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<AMAZON RDS>> White
+sprite $api_gateway [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000580000000000000085000000000000000
+000000000000003CD00000000000000DC300000000000000
+0000000000003CFFF00000000000000FFFC3000000000000
+00000000003CFE35F00000000000000F63EFD30000000000
+000000003CFE5006F00000000000000F7004EFD300000000
+0000003CFE400006F00000000000000F700004EFC3000000
+00000AFF40000006F00000000000000F70000004EFA00000
+00000CF400000006F00000000000000F700000003FD00000
+00000CF500000006F00000000000000F700000005FC00000
+00000CF500000006F76057037117307F600000005FC00000
+00000CF500000005FFE0DF08F24F70FF500000005FC00000
+00000CF500000006F00000000000000F700000005FC00000
+00000CF500000006F00000000000000F700000005FC00000
+00000CF500000006F00000000000000F700000005FC00000
+00000CF500000006F00000002400000F700000005FC00000
+00000CF500000006F0002000DF02000F700000005FC00000
+00000CF500000006F009F100F50FA00F700000005FC00000
+00000CF500000006F07F6008F005F80F700000005FC00000
+00000CF500000006E5F6000FB0005F5E700000005FC00000
+00000CF500000006F2DD002F2000DD2F700000005FC00000
+00000CF500000006F00FF0AF001FF00F700000005FC00000
+00000CF500000006F00180F80008100F700000005FC00000
+00000CF500000006F00006F00000000F700000005FC00000
+00000CF500000006F00002400000000F700000005FC00000
+00000CF500000006F00000000000000F700000005FC00000
+00000CF500000006F00000000000000F700000005FC00000
+00000CF500000006F00000000000000F700000005FC00000
+00000CF500000006F44034024014204F600000005FC00000
+00000CF500000005FFF0EF0AF25F70FF500000005FC00000
+00000CF500000006F11011001001001F700000005FC00000
+00000CF500000006F00000000000000F700000005FC00000
+00000CF400000006F00000000000000F700000003FC00000
+00000CF900000006F00000000000000F700000008FD00000
+000005AFFB500006F00000000000000F700005BFFB500000
+000000017EFFB404F00000000000000F504BFFE710000000
+000000000018EFFEF00000000000000FEFFE820000000000
+000000000000028ED00000000000000DE820000000000000
+000000000000001780000000000000087100000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<API GATEWAY>> White
+sprite $aws_amplify [48x48/16] {
+000000000000000000001EDDDDE900000000000000000000
+0000000000000000000008FFFFFF20000000000000000000
+0000000000000000000000EFFFFFD0000000000000000000
+00000000000000000032005FFFFFF5000000000000000000
+000000000000000000FC000CFFFFFF000000000000000000
+000000000000000004FF1002FFFFFF700000000000000000
+00000000000000000EFFB000AFFFFFF10000000000000000
+00000000000000008FFFF4000FFFFFFB0000000000000000
+0000000000000003FFFFFE0006FFFFFF2000000000000000
+0000000000000004FFFFFF6000EFFFFFD000000000000000
+0000000000000000BFFFFFF0004FFFFFF600000000000000
+00000000000000001FFFFFFA000BFFFFFF00000000000000
+000000000000031007FFFFFF1002FFFFFF80000000000000
+0000000000000F8000EFFFFFC0009FFFFFF2000000000000
+0000000000009FF0005FFFFFF5000FFFFFFB000000000000
+000000000001FFFA000CFFFFFE0005FFFFFF300000000000
+00000000000BFFFF2002FFFFFF7000EFFFFFD00000000000
+00000000003FFFFFD000AFFFFFF1004FFFFFF60000000000
+0000000000EFFFFFF1000FFFFFFA000BFFFFFF0000000000
+0000000005FFFFFF800007FFFFFF2001FFFFFF8000000000
+000000000FFFFFFE000000EFFFFFD0009FFFFFF200000000
+000000009FFFFFF60000004FFFFFF5000FFFFFFB00000000
+00000002FFFFFFD00000000BFFFFFF0005FFFFFF30000000
+0000000BFFFFFF2000000002FFFFFF7000DFFFFFE0000000
+0000004FFFFFFB0000000000AFFFFFF1003FFFFFF7000000
+000000EFFFFFF100000000000FFFFFFB000AFFFFFF000000
+000006FFFFFF70000000000006FFFFFF3001FFFFFF900000
+00000FFFFFFE00000000000000EFFFFFD0008FFFFFF20000
+0000AFFFFFF3000000000000004FFFFFF6000EFFFFFC0000
+0002FFFFFFC1222222222222000BFFFFFF0004FFFFFF4000
+000CFFFFFFFFFFFFFFFFFFFF5002FFFFFF8000DFFFFFE000
+005FFFFFFFFFFFFFFFFFFFFFF0009FFFFFF2002FFFFFF800
+00EFFFFFFFFFFFFFFFFFFFFFF8000FFFFFFB000AFFFFFF00
+07FFFFFFFFFFFFFFFFFFFFFFFF1005FFFFFF3001FFFFFFA0
+2FFFFFFFFFFFFFFFFFFFFFFFFFC000EFFFFFF0007FFFFFF4
+9FEEEEEEEEEEEEEEEEEEEEEEEEF3003EEEEEF6000CEEEEEB
+}
+
+
+skinparam folderBackgroundColor<<AWS AMPLIFY>> White
+sprite $aws_ecr [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000003910000000000000000000000
+0000000000000000000000AFFF7000000000000000000000
+000000000000000000007FF408FF30000000000000000000
+0000000000000000003FF900001CFC000000000000000000
+00000000000000001CFC100000004FF90000000000000000
+0000000000000009FE2000000000006FF600000000000000
+00000000000006FF60000000000000009FE3000000000000
+000000000002EF90000000000000000001DFB00000000000
+0000000000BFD10000000000000000000003EF5000000000
+000000005FF30000000000000000000000006F9000000000
+00000000CF0000000000000000000000003FF60000000000
+00000000CF00000000000000000000000CFB00A800000000
+00000000CF0000000000000000000008FF105FF900000000
+00000000CF00000000000000000005FF602FF7EB00000000
+00000000CF000000000000000002EF900BFB00FC00000000
+00000000CF0000000000000000BFD100AF2000FC00000000
+00000000CF000000000000008FF40000CC0000FC00000000
+00000000CF0000000000000CF8000000CC0000FC00000000
+00000000CF0000000000004F10000000CC0000FC00000000
+00000000CF0000000000004F00000000CC0000FC00000000
+00000000CF0000000000004F00000000CC0000FC00000000
+00000000CF0000000000004F00000000CC0000FC00000000
+00000000CF0000000000004F00000000CC0000FC00000000
+00000000CF0000000000004F00000003F90000FC00000000
+00000000CF0000000000004F000000BFB00000FC00000000
+00000000CF0000000000004F00008FF3000000FC00000000
+00000000BF1000000000004F005FF700000004FB00000000
+000000004FF500000000004F07FA00000001CFA100000000
+00000000009FE2000000004F0CC00000009FF30000000000
+000000000001DFB00000004F0CC000005FF6000000000000
+00000000000004FF7000004F0CC0002EFA00000000000000
+0000000000000007FF40004F0CC00BFD1000000000000000
+00000000000000000BFD104F0CB5FF300000000000000000
+0000000000000000002EF83F09FF70000000000000000000
+000000000000000000005FFF09C000000000000000000000
+000000000000000000000097000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<AWS ECR>> White
+sprite $pizza_planet [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000001DFFFFFFFF40000000000000000000
+0000000000000000CFFFFFFFFFFFFFF10000000000000000
+00000000000000CFFFFFFFFFFFFFFFFFF000000000000000
+0000000000003FFFFFFB20000008FFFFFF90000000000000
+00000000000AFFFFF0000000000000AFFFFF000000000000
+0000000000CFFFF0000000FF00000000EFFFF00000000000
+000000000BFEFC00000000FFFB00000004FFFF0000000000
+000000005FFF800000000FFFFFF00000000FFFF000000000
+00000000FFFC000000000FF0FFFF00000002FFF500000000
+0000000FFFF0000000008FF60CFF70000000AFFF00000000
+0000000FFF0000000000FFF235FFF00000000FFFB0000000
+000000FFFE0000000008F300FF0FF500000001FFF0000000
+000000FFF0000000000FF090FFFFD100000000FFF5000000
+000007FFF0000000000FCCFFFFC000000000007FFF000000
+00000FFF5000000000FFFFFF300000000000000FFF000000
+00000FFF0000000000FFFF00000000000000000FFF000000
+00000FFF0000000002F90000000000000000000FFF400000
+00000FFF0000000000000000000000000000000FFF700000
+00000FFF00000000000EFFFFFFFF00000000000DFF800000
+00000FFF0000000000049888889700000000000DFF800000
+00000FFF0000000000000000000000000000000DFF800000
+00000FFF0000010000000000000000000000000DFF800000
+00000FFF05D0CC79E1AF9FDF9D700FBFCDF8F00DFF800000
+00000FFF09F035FFF77F3FFFFFF05FAFEFFFF90DFF800000
+00000FFF02FC00FDCF695FC7FFC00FEFF9FFF90DFF800000
+00000FFF0000000000000000000000000000000DFF800000
+00000FFF0000000000000000000000000000000DFF800000
+00000FFFCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFFF800000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCF900000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF300000
+000000343333333333333333333333333333333341000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<PIZZA PLANET>> White
+
+skinparam arrow<<release>> {
+    Color ;line.dashed
+}
+
+
+
+title \nDEPLOYMENT DIAGRAM
+rectangle "==AWS Cloud" <<node>> as aws_cloud  {
+    rectangle "<$lambda>\n==Pizza Planet BE\n//<size:12>[AWS Lambda]</size>//\n\n Serverless Flask application\nPulled from ECR" <<container>> as aws_lambda 
+    rectangle "<$api_gateway>\n==Amazon API Gateway\n//<size:12>[API Gateway]</size>//" <<container>> as aws_api_gateway 
+    rectangle "<$aws_amplify>\n==Pizza Planet UI\n//<size:12>[AWS Amplify]</size>//" <<container>> as aws_amplify 
+    rectangle "<$aws_ecr>\n==BE Image\n//<size:12>[AWS ECR]</size>//" <<container>> as aws_ecr 
+    rectangle "==AWS Virtual Private Cloud" <<node>> as aws_vpc {
+        rectangle "==Private Subnet" <<node>> as aws_private_subnet {
+            database "<$aws_rds>\n==Pizza Planet DB\n//<size:12>[AWS RDS]</size>//\n\n Relational Database" <<container>> as aws_rds 
+        }
+    }
+}
+rectangle "<$pizza_planet>\n==Pizza Planet Page\n\n JavaScript" <<external_system>> as pizza_planet 
+
+aws_lambda -RIGHT->> aws_rds : **Reads/Writes**\n//<size:12>[VPC Link through Security Group]</size>//
+aws_lambda -DOWN->> aws_ecr <<release>> : **Pulls**
+
+aws_api_gateway - ->> aws_lambda : **Requests**\n//<size:12>[Proxy]</size>//
+
+aws_amplify - ->> pizza_planet : **Serves**
+pizza_planet - ->> aws_api_gateway : **Requests**\n//<size:12>[HTTPS]</size>//
+
+hide stereotype
+legend right
+<#00000000,#00000000>|<color:#000000>**Legend**</color> |
+|<#438DD5><color:#3C7FC0> <U+25AF></color> <color:#FFFFFF> container </color> |
+|<#999999><color:#8A8A8A> <U+25AF></color> <color:#FFFFFF> external_system </color> |
+|<#FFFFFF><color:#A2A2A2> <U+25AF></color> <color:#000000> node </color> |
+|<color:#66622E> <U+2500></color> <color:#66622E> Once per release (dashed) </color> |
+endlegend
+@enduml
+
+PlantUML version 1.2022.6(Tue Jun 21 14:34:49 BRT 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: BR
+--></g></svg>
