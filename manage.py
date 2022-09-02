@@ -25,5 +25,12 @@ def test():
     return pytest.main(['-v', './app/test'])
 
 
+@manager.command('delete', with_appcontext=True)
+def delete():
+    for model in [OrderDetail, Order, Beverage, Ingredient, Size]:
+        print(model.query.delete(), f'entries of {model.__name__} deleted')
+    db.session.commit()
+
+
 if __name__ == '__main__':
     manager()
