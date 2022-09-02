@@ -69,6 +69,12 @@ python3 manage.py db upgrade
 python3 manage.py seed run
 ```
 
+- Empty the database:
+
+```bash
+python3 manage.py delete
+```
+
 - If you want to use the hot reload feature set FLASK_ENV before running the project:
 
 _For linux/MacOS users:_
